@@ -53,9 +53,7 @@ struct ContentView: View {
     
     func cardCountAdjuster(by offset: Int, symbol: String) -> some View {
         Button(action: {
-            if cardCount > 1 {
-                cardCount += offset
-            }
+            cardCount += offset
         }, label:{
             Image(systemName: symbol)
         })
